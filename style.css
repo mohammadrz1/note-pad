@@ -1,0 +1,147 @@
+/* add font */
+@font-face {
+    font-family: Ubuntu-Bold ;
+    src: url(font/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Light ;
+    src: url(font/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url(font/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(font/Ubuntu-Regular.ttf);
+}
+/* global css */
+:root{
+    /* itm card color [START] */
+    --purple-color-itm-card : #923DD6;
+    --red-color-itm-card : #DE4747 ;
+    --blue-color-itm-card : #349CD7 ;
+    --yellow-color-itm-card : #9DAE31 ; 
+    /* itm card color [END] */
+    --bg-color-body : #242424 ;
+    --bg-color-tool-bar : #393939 ;
+    --color-time-tool-bar : #626262 ;
+    --star-color : #D4E921 ;
+    --white-color : #ECECEC ;
+    --white-color-600 : #C8BFBF ;
+    --white-color-900 : #E8E3E3 ;
+}
+*{
+    font-family:Ubuntu-Regular ;
+}
+body{
+    background: var(--bg-color-body);
+    margin: 0;
+}
+/* header [START] */
+header{
+    width: 471px;
+    height: 832px;
+    flex-shrink: 0;
+    box-sizing: border-box ;
+    position: relative;
+}
+/* tooll bar [START] */
+#tooll-bar{
+    width: 190px;
+    height: 832px;
+    flex-shrink: 0;
+    padding:  24px 0 0 0;
+    border-right: 4px solid var(--color-time-tool-bar);
+    background-color: var(--bg-color-tool-bar);
+}
+#tooll-bar>h1{
+    color: var(--white-color-600);
+    font-family: Ubuntu-Bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+#itm-tooll-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+}
+#add-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+#add-btn>button{
+    margin-top: 25px;
+    width: 53px;
+    height: 53px;
+    background-color: #242424;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+#div-color-add-itm-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    border-radius: 50px;
+}
+#div-color-add-itm-card>a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+}
+#div-color-add-itm-card>a:nth-of-type(1){
+    background-color: var(--purple-color-itm-card);
+}
+#div-color-add-itm-card>a:nth-of-type(2){
+    background-color: var(--red-color-itm-card);
+}
+#div-color-add-itm-card>a:nth-of-type(3){
+    background-color: var(--blue-color-itm-card);
+}
+#div-color-add-itm-card>a:nth-of-type(4){
+    background-color: var(--yellow-color-itm-card);
+}
+#icon-tooll-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+#icon-tooll-bar>svg{
+    fill: var(--color-darck-mode-color-time-tool-bar, #626262);
+    cursor: pointer;
+}
+/* search box [START] */
+#search-box{
+    width: 303px;
+    height: 41px;
+    flex-shrink: 0;
+    background-color: #393939;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding-left: 23px;
+    font-size: 18px;
+    font-family: Ubuntu-Medium;
+    color: var(--white-color-900);
+    position: absolute;
+    left: 240px;
+    top: 30px;
+}
