@@ -41,14 +41,14 @@ body{
 /* header [START] */
 header{
     display: inline-block;
-    width: 240px;
+    width: 13%;
     flex-shrink: 0;
     box-sizing: border-box ;
     position: relative;
 }
 /* tooll bar [START] */
 #tooll-bar{
-    width: 190px;
+    width: 86%;
     height: 100vh;
     flex-shrink: 0;
     padding:  24px 0 0 0;
@@ -140,15 +140,16 @@ header{
     padding-left: 23px;
     font-size: 18px;
     font-family: Ubuntu-Medium;
-    color: var(--white-color-900);
+    color: var(--white-color-600);
     position: absolute;
     left: 240px;
     top: 30px;
 }
 /* main [START] */
 main{
-    display: inline-block;
-    height: 795px;
+    position: relative;
+    top: 50px;
+    display: inline-flex;
     width: 86%;
     flex-direction: column;
     align-items: flex-start;
@@ -169,4 +170,61 @@ main>h1{
     align-content: flex-start;
     gap: 30px 25px;
     flex-wrap: wrap;
+}
+/* code itm card [start] */
+.itm-card{
+    display: flex;
+    width: 252px;
+    height: 245px;
+    padding: 8px 15px 8px 17px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0; 
+    border-radius: 25px;
+    background-color: var(--purple-color-itm-card);
+}
+.itm-card>div{
+    width: 100%;
+    position: relative;
+    height: 225px;
+    flex-shrink: 0;
+}
+.itm-card-icon{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 176px;
+    position: absolute;
+    top: 9px;
+    left: 214px;
+}
+.itm-card-icon>img{
+    cursor: pointer;
+}
+.text-area-itm-card{
+    width: 200px;
+    height: 196px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+.text-area-itm-card>h1{
+    color: var(--white-color-900);
+    font-family: Ubuntu-Medium;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.29px;
+    cursor: pointer;
+}
+.text-area-itm-card>p{
+    color: var(--color-darck-mode-white-color-900, #E8E3E3);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 204px;
+    height: 158px;
+    flex-shrink: 0;
+    cursor: pointer;
 }
