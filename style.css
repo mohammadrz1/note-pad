@@ -34,6 +34,9 @@
 *{
     font-family:Ubuntu-Regular ;
 }
+::placeholder {
+    color: #fffbfbbc;
+}
 body{
     background: var(--bg-color-body);
     margin: 0;
@@ -188,6 +191,9 @@ header{
     left: 240px;
     top: 30px;
 }
+#search-box::placeholder{
+    color: rgba(177, 177, 177, 0.325);
+}
 /* main [START] */
 main{
     position: relative;
@@ -216,7 +222,7 @@ main>h1{
     flex-wrap: wrap;
 }
 /* code itm card [start] */
-.itm-card{
+.itm-card-purple,.itm-card-blue,.itm-card-red,.itm-card-yellow{
     display: flex;
     width: 252px;
     height: 245px;
@@ -225,9 +231,8 @@ main>h1{
     align-items: flex-start;
     flex-shrink: 0; 
     border-radius: 25px;
-    background-color: var(--purple-color-itm-card);
 }
-.itm-card>div{
+.itm-card-purple>div,.itm-card-blue>div,.itm-card-red>div,.itm-card-yellow>div{
     width: 100%;
     position: relative;
     height: 225px;
@@ -256,20 +261,19 @@ main>h1{
     outline: none;
     color: var(--white-color-900);
     width: 100%;
-    background-color: var(--purple-color-itm-card);
+    resize: none;
 }
 .text-area-itm-card>textarea:first-of-type{
-    overflow-y: auto ;
     font-family: Ubuntu-Medium;
     height: 15%;
     font-size: 29px;
     font-style: normal;
     font-weight: 500;
+    overflow: hidden;
     line-height: normal;
     letter-spacing: 0.29px;
 }
 .text-area-itm-card>textarea:last-of-type{
-    overflow: auto;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -277,4 +281,16 @@ main>h1{
     width: 204px;
     height: 158px;
     flex-shrink: 0;
+}
+.itm-card-purple,.itm-card-purple textarea{
+    background-color: var(--purple-color-itm-card);
+}
+.itm-card-red,.itm-card-red textarea{
+    background-color: var(--red-color-itm-card);
+}
+.itm-card-yellow,.itm-card-yellow textarea{
+    background-color: var(--yellow-color-itm-card);
+}
+.itm-card-blue,.itm-card-blue textarea{
+    background-color: var(--blue-color-itm-card);
 }
