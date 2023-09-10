@@ -22,4 +22,3 @@ function addBtn4(){
     return itmCard;
 }
 // local sorge
-localStorage.setItem("itm-card",itmCard);
