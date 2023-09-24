@@ -7,7 +7,13 @@
 
 
 ## ToDo
-  Being saved and...
-
-
+  Being saved and
+  Favorite section
+  Delete notes
+  Recycle bin for things that have been deleted
+  
+.
+.
+.
+.
 Warning: Information will not be saved
