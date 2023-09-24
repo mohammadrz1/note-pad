@@ -60,6 +60,7 @@ header{
     border-right: 4px solid var(--color-time-tool-bar);
     background-color: var(--bg-color-tool-bar);
 }
+/* tool bar title [start] */
 #tooll-bar>h1{
     color: var(--white-color-600);
     font-family: Ubuntu-Bold;
@@ -74,12 +75,16 @@ header{
     line-height: normal;
     margin: 0;
 }
+/* tool bar title [END] */
+/* tool bar itm [start] */
 #itm-tooll-bar{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 27px;
 }
+/* tool bar itm [END] */
+/* add btn [start] */
 #add-btn{
     display: flex;
     flex-direction: column;
@@ -102,6 +107,7 @@ header{
     top: 15px ;
     left: 16px;
 }
+/* add btn [END] */
 #div-color-add-itm-card>a{
     width: 37px;
     height: 37px;
@@ -194,6 +200,7 @@ header{
 #search-box::placeholder{
     color: rgba(177, 177, 177, 0.325);
 }
+/* search box [END] */
 /* main [START] */
 main{
     position: relative;
@@ -206,6 +213,7 @@ main{
     gap: 30px;
     flex-shrink: 0;
 }
+/* main title [start] */
 main>h1{
     color: var(--white-color-600);
     font-family: Ubuntu-Regular;
@@ -213,6 +221,8 @@ main>h1{
     line-height: normal;
     letter-spacing: 0.48px;
 }
+/* main title [END] */
+/* conteant code [start] */
 #conteant{
     display: flex;
     width: 100%;
@@ -221,6 +231,7 @@ main>h1{
     gap: 30px 25px;
     flex-wrap: wrap;
 }
+/* conteant code [END] */
 /* code itm card [start] */
 .itm-card-purple,.itm-card-blue,.itm-card-red,.itm-card-yellow{
     display: flex;
